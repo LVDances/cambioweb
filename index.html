@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    str_segundo = new String (segundo)
+    if (str_segundo.length == 1)
+       segundo = "0" + segundo
+
+    str_minuto = new String (minuto)
+    if (str_minuto.length == 1)
+       minuto = "0" + minuto
+
+    str_hora = new String (hora)
+    if (str_hora.length == 1)
+       hora = "0" + hora
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",1000)
+
+function cambiarModo() { 
+    var cuerpoweb = document.body; 
+    cuerpoweb.classList.toggle("oscuro"); 
+}
+}
+</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="par2CSS.css">
+	<title></title>
+</head>
+<body class="body" onload="mueveReloj()">
+  
+ <header class="top-bar">
+
+      <div class="header">
+
+        <div class="headerlogo">
+          <div class="logo">
+
+            <figure>
+              <img src="https://static.vecteezy.com/system/resources/previews/007/634/526/non_2x/environment-logo-icon-design-template-free-vector.jpg" width="100px" alt="" srcset="" width="100px" alt="" srcset="" />
+            </figure>
+          </div>
+        </div>
+        <div class="titulo">
+          <h1>CAMBIO CLIMATICO</h1>
+          
+          <div class="fondo-barra">
+            
+            <div class="barra-busqueda">
+              <input
+                type="text"
+                placeholder="Busca Informacion" />
+              <button>BUSCAR</button>
+            </div>
+          </div>
+          <!-- Aquí va la segunda fila de información -->
+          <div class="row">
+          <div  class="navega">
+            <nav class="main-nav" >
+              <a href="#" >Inicio</a>
+              <a href="#">¿Quienes Somos?</a>
+              <a href="#">Productos</a>
+              <a href="#">Blog</a>
+              <a href="#">Noticias</a>
+              <a href="#">Necesita Ayuda</a>
+              <a href="#">Contactos</a>
+              <!-- More links -->
+              <small style="color: khaki">800-10-5000</small>
+            </nav>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebarcont">
+      <aside class="sidebar" >
+        <!-- sidebar-->
+        <ul>
+          <li>Rainfall Sensors</li>
+          <li>Wind Anemometer</li>
+          <li>Weather Stations</li>
+          <li>Controllers</li>
+          <li>Indicators/Displays</li>
+          <li>Temp/Humidity Sensors</li>
+          <li>Barometric Pressure</li>
+          <li>Solar Radiation</li>
+          <li>Replacements Parts</li>
+          
+        </ul>
+      </aside>
+      <div class="banner">
+        <!-- <img src="./img/img1.png" alt="Banner MIVEN"> -->
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="left-side">
+
+          <div class="filamaincont0"><h2>DESTACADOS</h2></div>
+          <div>
+
+        <h2>DETECTOR DE CLICKS CLICK BOTOON</h2>
+        <button type="button" id="clickbtn" >OPRIME</button>
+        <div id="showdata"> </div>
+    </div>
+  <form name="form_reloj"> <h3>Reloj</h3>
+<input type="text" name="reloj" size="10"   style="background-color : Black; color : White; font-family : Verdana, Arial, Helvetica; font-size : 20pt; text-align : center;" onfocus="window.document.form_reloj.reloj.blur()">
+</form>
+          <div class="filamaincont">
+            <section class="featured-products">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="https://previews.123rf.com/images/bigmouse/bigmouse2205/bigmouse220500065/186380496-dibujos-animados-color-cambio-clim%C3%A1tico-paisaje-escena-concepto-dise%C3%B1o-plano-estilo-ilustraci%C3%B3n.jpg" alt="Product Image" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">Concecuencias del cambio climatico</h2>
+                  <p class="sku">SEQUIAS</p>
+                  <p class="product-description">
+                    A Causa del cambio climatico lugares antes verdes hoy en dia son paramos deserticos
+                  </p>
+                  <a href="#" class="more-info">MAS INFORMACION</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <!-- Placeholder for the product image -->
+                  <img src="https://laverdadnoticias.com/__export/1624128453885/sites/laverdad/img/2021/06/19/15_imagenes_de_cambio_climaticos_para_ninos.jpg_750902798.jpg" alt="Product Image" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">TEMPERATURA</h2>
+                  <p class="sku">DESHIELO</p>
+                  <p class="product-description">
+                    Otra causa el deshielo de los Polos, a causa del aumento de TEMPERATURA del planeta. Ocasinando cambio en el habitad de la fauna.
+                  </p>
+                  <a href="#" class="more-info">MAS INFORMACION</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <!-- Placeholder for the product image -->
+                  <img src="https://www.ambienteysociedad.org.co/wp-content/uploads/2016/03/cambio-climaticos-financiamiento-climatico.jpg" alt="Product Image" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">CRECIMEINTO INDUSTRIAL</h2>
+                  <p class="sku">BUENO O MALO</p>
+                  <p class="product-description">
+                    El crecimiento de industrial de por si es "bueno" para la humanidad, pero tambien afectando las areas verdes del planeta para poner nuevas insdustrias.
+                  </p>
+                  <a href="#" class="more-info">MAS INFORMACION</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <!-- Placeholder for the product image -->
+                  <img src="https://us.123rf.com/450wm/yupiramos/yupiramos2007/yupiramos200726214/151949388-veh%C3%ADculos-el%C3%A9ctricos-coches-en-la-estaci%C3%B3n-de-carga-road-vector-ilustraci%C3%B3n-dise%C3%B1o.jpg?ver=6" alt="Product Image" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">AUTOS ELECTRICOS</h2>
+                  <p class="sku">¿ELLOS CONTAMINAN?</p>
+                  <p class="product-description">
+                    Mucho se habla de los autos electricos que llegaron para "descontaminar", pero hay una cortina de humo tras ellos; LAS BATERIAS QUE USAN NO SON VIODEGRADABLES.
+                  </p>
+                  <a href="#" class="more-info">MAS INFORMACION</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <!-- Placeholder for the product image -->
+                  <img src="https://www.shutterstock.com/image-vector/heavy-transport-traffic-air-pollution-600nw-2115610643.jpg" alt="Product Image" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">EXCESO DE AUTOMOVILES</h2>
+                  <p class="sku">¿DEMASIADOS?</p>
+                  <p class="product-description">
+                    La creciente poblacion automotriz no tiene limites, causando mas contaminacion y mas exceso de CO2
+                  </p>
+                  <a href="#" class="more-info">MAS INFORMACION</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="contact-info">
+            <h3>¿QUE HACER?</h3>
+            <h3>Planta árboles</h3>
+            
+          </div>
+
+          <div >
+            <div >
+              <img src="https://img.freepik.com/vector-gratis/dibujado-mano-dia-mundial-medio-ambiente-salva-planeta-ilustracion_52683-61570.jpg?size=338&ext=jpg&ga=GA1.1.1222169770.1701907200&semt=ais">
+            </div>
+          </div>
+
+          <div class="social-media">
+            <h3>No tires basura en las calles. Evita quemar basura, hojas y otros objetos, así como hacer fogatas en bosques o en plena ciudad. Riega las plantas durante la noche o muy temprano, cuando el Sol tarda más en evaporar el agua.</h3>
+          
+            </div>
+          </div>
+
+          
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Otros contenidos del footer -->
+        <div class="map-container">
+          <!-- Reemplaza 'src' con la URL de tu ubicación en Google Maps -->
+        
+  
+        </div>
+      </div>
+     
+    </footer>
+    <label class="switch">
+      <input type="checkbox" id="input">
+      <span class="slider"></span>
+    </label>
+<script src="script.js"></script>
+<button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+<script type="text/javascript"> 
+      function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+      } 
+    </script>
+</body>
+</html>
